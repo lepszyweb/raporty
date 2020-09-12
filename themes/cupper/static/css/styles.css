@@ -246,7 +246,7 @@ label {
 
 table {
     text-align: left;
-    table-layout: fixed;
+/*    table-layout: fixed;*/
     width: 100%;
     border-collapse: collapse;
 }
