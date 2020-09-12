@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,7 @@
   </head>
   <body>
     {{ if ne .Type "print-version" }}
-      <a href="#main">skip to content</a>
+      <a href="#main">Przejdź do treści</a>
     {{ end }}
     {{ partial "svg.html" . }}
     <div class="wrapper {{ if eq .Type "print-version" }}print-version{{ end }}">
@@ -55,21 +55,21 @@
                   <a class="print" href="{{ "print-version" | absURL }}">
                     <svg viewBox="0 0 35 45" aria-hidden="true" focusable="false">
                       <use xlink:href="#doc"></use>
-                    </svg>Print version
+                    </svg>Do druku
                  {{ end }}
                </a>
               </p>
               {{ if eq .Type "print-version" }}
                 <p class="toc-link">
                   <span aria-hidden="true">&#x2193;</span>
-                  <a href="#toc">Table of contents</a>
+                  <a href="#toc">Spis treści</a>
                   <span aria-hidden="true">&#x2193;</span>
                 </p>
               {{ end }}
             </div>
             {{ block "nav" . }}
               <nav id="patterns-nav" class="patterns" role="navigation">
-                <h2 class="vh">Main navigation</h2>
+                <h2 class="vh">Główna nawigacja</h2>
                 <button id="menu-button" aria-expanded="false">
                   <svg viewBox="0 0 50 50" aria-hidden="true" focusable="false">
                     <use xlink:href="#menu"></use>
@@ -123,8 +123,7 @@
                 <span aria-hidden="true"></span>
               </label>
             </div>
-            Powered by <strong>Cupper</strong>, a <strong>The Paciello Group</strong> project.<br>
-            For general enquiries, contact us on info@paciellogroup.com.
+            Powered by <strong>Cupper</strong>, a <strong>The Paciello Group</strong> project.
           </footer>
         </div>
       </div>

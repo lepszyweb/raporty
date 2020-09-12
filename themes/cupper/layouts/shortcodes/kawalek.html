@@ -1,0 +1,4 @@
+{{$file := .Get "file"}}
+{{ $contents := (printf "/kawalek/%s" $file) | readFile }}
+{{ $commented := add "<!-- kawalek -->\r\n" $contents }}
+{{ $commented | markdownify }}

@@ -1,0 +1,4 @@
+{{$file := .Get "file"}}
+{{ $contents := (printf "/bledy/%s" $file) | readFile }}
+{{ $commented := add "<!-- bledy -->\r\n" $contents }}
+{{ $commented | markdownify }}
